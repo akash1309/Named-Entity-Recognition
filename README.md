@@ -30,7 +30,7 @@ As the files are large, so we will take 10-10 lines from sentences and labels to
 You can use full as per your choice but I will recommend working on small data first so that errors can easily be corrected.
 You can find these files in `./Data/small`
 
-After making these 2 files, we will be using them to extract tokens and labels in a separate text files.
+After making these small files, we will be using them to extract tokens and labels in a separate text files.
 
 <pre>
 #words.txt
