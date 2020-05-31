@@ -47,3 +47,4 @@ B-LOC
 ...
 </pre>
 
+You will find `words.txt` and `tags.txt` file in `./Data/small`.
