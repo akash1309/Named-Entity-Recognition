@@ -48,3 +48,4 @@ B-LOC
 </pre>
 
 You will find `words.txt` and `tags.txt` file in `./Data/small`.
+Now lets save all the information about files and length of all the datasets(train,test and val) in a json format which is also present in `./Data/small`
