@@ -49,3 +49,6 @@ B-LOC
 
 You will find `words.txt` and `tags.txt` file in `./Data/small`.<br>
 Now lets save all the information about files and length of all the datasets(train,test and val) in a json format which is also present in `./Data/small`
+<br><br>
+
+Code of above all the steps is given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Data_Preprocessing.ipynb"> Data_Preprocessing.ipynb </a>
