@@ -26,6 +26,9 @@ Where is John ?
 B-PER O O B-LOC I-LOC
 O O B-PER O
 </pre>
+As the files are large, so we will take 10-10 lines from sentences and labels to form train,val and test sets.
+You can use full as per your choice but I will recommend working on small data first so that errors can easily be corrected.
+You can find these files in `./Data/small`
 
 After making these 2 files, we will be using them to extract tokens and labels in a separate text files.
 
