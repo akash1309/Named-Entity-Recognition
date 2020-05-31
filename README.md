@@ -26,3 +26,21 @@ Where is John ?
 B-PER O O B-LOC I-LOC
 O O B-PER O
 </pre>
+
+After making these 2 files, we will be using them to extract tokens and labels in a separate text files.
+
+<pre>
+#words.txt
+John
+lives
+in
+...
+</pre>
+
+<pre>
+#tags.txt
+B-PER
+B-LOC
+...
+</pre>
+
