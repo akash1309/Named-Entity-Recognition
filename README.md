@@ -1,7 +1,10 @@
 # Named-Entity-Recognition
 Introduction to sequence tagging
 
-Research Paper Used : <a href="https://arxiv.org/pdf/1508.01991v1.pdf"> Bidirectional LSTM-CRF Models for Sequence Tagging</a>.
+Research Paper Used : <a href="https://arxiv.org/pdf/1508.01991v1.pdf"> Bidirectional LSTM-CRF Models for Sequence Tagging</a><br>
+Resources : 
+- <a href="https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling">Sequence Labelling</a>
+- <a href="https://pytorch.org/tutorials/beginner/nlp/advanced_tutorial.html">Bi-LSTM + CRF</a>
 
 Given a sentence, give a tag to each word (Named Entity Recognition)
 <pre>
