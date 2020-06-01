@@ -67,3 +67,14 @@ At some point there may be words that are not present in our dictionaries, so we
 Also we want to have equal lengths of our sentences so we add `<PAD>`.
 <br>
 Now `sentences.txt` and `labels.txt` files are encoded to numerical values as our model will only learn from numbers and not text.
+
+#### Sequence Padding
+
+This is where it gets fun. When we sample a batch of sentences, not all the sentences usually have the same length. Let’s say we have a batch of sentences `batch_sentences` that is a Python `list of lists`, with its corresponding `batch_tags` which has a tag for each token in `batch_sentences`.
+
+We add `pad sequences` at last in sentences. Here, we will be taking max length sentence as our main sentence and then pad `<pad>` at the end of all the sentences so that all sequences have all lengths. Similarly in the labels also, we add `O` at last of every label so that all lengths become the same.
+
+#### One hot encoding and Using TensorDataset,DataLoader
+
+Our labels are converted to one hot vectors and then batch_sentences and batch_labels are given to TensorDataset and DataLoader to generate batches.
+
