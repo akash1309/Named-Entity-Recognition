@@ -80,3 +80,6 @@ We add `pad sequences` at last in sentences. Here, we will be taking max length 
 
 Our labels are converted to one hot vectors and then batch_sentences and batch_labels are given to TensorDataset and DataLoader to generate batches.
 
+Approach used for our code :
+
+<img src = "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Algorithm.png?raw=true" alt="Algorithm">
