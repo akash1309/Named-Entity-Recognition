@@ -7,6 +7,8 @@ John     lives   in   New    York<br>
 B-PER      O     O   B-LOC   I-LOC
 </pre>
 
+## Part 1 (Data Preprocessing)
+
 ### DataSet Downloading
 DataSet for it can be downloaded from <a href="https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus">Kaggle</a>.
 I will suggest using small dataset.
@@ -27,10 +29,10 @@ B-PER O O B-LOC I-LOC
 O O B-PER O
 </pre>
 As the files are large, so we will take 10-10 lines from sentences and labels to form train,val and test sets.
-You can use full as per your choice but I will recommend working on small data first so that errors can easily be corrected.
-You can find these files in `./Data/small`
+You can use full as per your choice. Here we will be using full files.
+You can find these files in `./Data/` . It contains two sub directories- one is for `small` dataset and `big` is for complete dataset.
 
-After making these small files, we will be using them to extract tokens and labels in a separate text files.
+After making these files, we will be using them to extract tokens and labels in a separate text files.
 
 <pre>
 #words.txt
@@ -47,8 +49,10 @@ B-LOC
 ...
 </pre>
 
-You will find `words.txt` and `tags.txt` file in `./Data/small`.<br>
-Now lets save all the information about files and length of all the datasets(train,test and val) in a json format which is also present in `./Data/small`
+You will find `words.txt` and `tags.txt` files in both `./Data/small` and `./Data/big`.<br>
+
 <br><br>
 
 Code of above all the steps is given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Data_Preprocessing.ipynb"> Data_Preprocessing.ipynb </a>
+
+
