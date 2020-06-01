@@ -365,5 +365,3 @@ Saturday
 arrests
 Friday
 Alexandria
-<pad>
-UNK
