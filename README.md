@@ -1,6 +1,8 @@
 # Named-Entity-Recognition
 Introduction to sequence tagging
 
+Research Paper Used : <a href="https://arxiv.org/pdf/1508.01991v1.pdf"> Bidirectional LSTM-CRF Models for Sequence Tagging</a>.
+
 Given a sentence, give a tag to each word (Named Entity Recognition)
 <pre>
 John     lives   in   New    York<br>
