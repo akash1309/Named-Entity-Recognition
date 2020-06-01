@@ -50,9 +50,20 @@ B-LOC
 </pre>
 
 You will find `words.txt` and `tags.txt` files in both `./Data/small` and `./Data/big`.<br>
-
-<br><br>
-
+<br>
 Code of above all the steps is given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Data_Preprocessing.ipynb"> Data_Preprocessing.ipynb </a>
 
+## Part-2 (Model Training)
 
+#### Loading Text Data
+
+In NLP, we have text as input and our machine can't understand texts. So, our first step is to make a dictionary which stores a numerical value corresponding the a word.<br>
+In NLP applications, a sentence is represented by the sequence of indices of the words in the sentence.<br>
+For example if our vocabulary is `{'is':1, 'John':2, 'Where':3, '.':4, '?':5}`
+then the sentence `“Where is John ?”` is represented as `[3,1,2,5]`. 
+
+Here, we will be working on our `words.txt` and `tags.txt` files. Basically, we are creating dictionaries for `words to indices` and vice versa and for `tag to indices` and vice versa.<br>
+At some point there may be words that are not present in our dictionaries, so we also add `UNK` for unknown words.<br>
+Also we want to have equal lengths of our sentences so we add `<PAD>`.
+<br>
+Now `sentences.txt` and `labels.txt` files are encoded to numerical values as our model will only learn from numbers and not text.
