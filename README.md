@@ -83,6 +83,9 @@ We add `pad sequences` at last in sentences. Here, we will be taking max length 
 
 Our labels are converted to one hot vectors and then batch_sentences and batch_labels are given to TensorDataset and DataLoader to generate batches.
 
-Approach used for our code :
+All these codes are given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Model_Basics.ipynb">
+  Model Basics</a>
+  
+#### Model Building and Training
 
-<img src = "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Algorithm.png?raw=true" alt="Algorithm">
+See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Model training and building</a> This code part is heavily commented.
