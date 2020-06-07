@@ -105,15 +105,15 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
                                             <--------------------------------------
                                             |
                                             |
-                 Making a 2-dimensional Matrix of label dictionary size and filling it with default value.
+  Making a 2-dimensional Matrix of label dictionary size and filling it with default value.
                                             |
                       Making <SELECT> tag value as 0 (As it is starting) 
                                             |
-                 For every word in sentence, see emission and transition score and add both.
+         For every word in sentence, see emission and transition score and add both.
                                             |
-              Add the summation of emission and transition score to the 2-dimensional Matrix.(see Formula 1)
+  Add the summation of emission and transition score to the 2-dimensional Matrix.(see Formula 1)
                                             |
-                  Calculate score of other label and conditional probability,(see Formula 2)            
+           Calculate score of other label and conditional probability,(see Formula 2)            
                                                        
 
 
@@ -122,7 +122,8 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
 Below is the procedure:
 
 <pre><b>
-Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction ---> Calculating Vertibi Losses ---> Generating Final Scores ---> Taking out Best path and Maximum Score
+Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction ---> 
+Calculating Vertibi Losses ---> Generating Final Scores ---> Taking out Best path and Maximum Score
 
 </b></pre>
 <br>
