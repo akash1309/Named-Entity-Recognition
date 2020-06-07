@@ -92,13 +92,13 @@ For Basics of Model Building, see <a href="https://github.com/sgrvinod/a-PyTorch
 Please refer to its theory for better understanding.<br>
 Now, we will be discussing about its implementation and test set prediction.<br>
 
-### Implementation
+### Implementation & Prediction
 Before implementation, see basics functions used in this implementation : <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Basics_Of_Functions_Used.ipynb">Basic Functions Used</a><br>
 We will be using embeddings in it, as we don't know how much length a sentence can have.
 Here are the 2 formulas that we will use:<br>
-<br><br>
-Below is the procedure : 
+<br><br> 
 <pre><b>
+Below is the procedure for Implementation :<br><br>
 Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction
                                                                                   |
                                                                                   |
@@ -117,14 +117,12 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
                                                        
 
 
-### Prediction 
 
-Below is the procedure:
+<br><br>Below is the procedure for Prediction :<br><br>
 
 <pre><b>
 Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction ---> 
 Calculating Vertibi Losses ---> Generating Final Scores ---> Taking out Best path and Maximum Score
-
 </b></pre>
 <br>
 <br>
