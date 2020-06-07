@@ -93,10 +93,14 @@ Please refer to its theory for better understanding.<br>
 Now, we will be discussing about its implementation and test set prediction.<br>
 
 ### Implementation
-
 Before implementation, see basics functions used in this implementation : <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Basics_Of_Functions_Used.ipynb">Basic Functions Used</a><br>
 We will be using embeddings in it, as we don't know how much length a sentence can have.
-
+Here are the 2 formulas that we will use:<br>
+<figure>
+  <img src="https://github.com/akash1309/Named-Entity-Recognition/blob/master/formula1.png?raw=true" alt="formula1">
+  <figcaption><pre>                Formula 1 </pre></figcaption>  
+</figure>
+<br><br>
 Below is the procedure : 
 <pre><b>
 Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction
@@ -104,15 +108,15 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
                                                                                   |
                                             <--------------------------------------
                                             |
-                                            
+                                            |
                  Making a 2-dimensional Matrix of label dictionary size and filling it with default value.
                                             |
                       Making <SELECT> tag value as 0 (As it is starting) 
                                             |
                  For every word in sentence, see emission and transition score and add both.
                                             |
-              Add the summation of emission and transition score to the 2-dimensional Matrix.
-              
+              Add the summation of emission and transition score to the 2-dimensional Matrix.(see figure 1)
+             
                   
 
 
@@ -122,8 +126,8 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
 
 
 
-</b></pre>                                            
-
+                                          
+</b></pre>
 See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Model training and building</a> This code part is heavily commented.
 
 
