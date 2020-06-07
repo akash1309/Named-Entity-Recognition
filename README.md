@@ -58,9 +58,9 @@ You will find `words.txt` and `tags.txt` files in both `./Data/small` and `./Dat
 <br>
 Code of above all the steps is given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Data_Preprocessing.ipynb"> Data_Preprocessing.ipynb </a>
 
-## Part-2 (Model Training)
+## Part-2 (Model Basics)
 
-#### Loading Text Data
+### Loading Text Data
 
 In NLP, we have text as input and our machine can't understand texts. So, our first step is to make a dictionary which stores a numerical value corresponding the a word.<br>
 In NLP applications, a sentence is represented by the sequence of indices of the words in the sentence.<br>
@@ -73,19 +73,32 @@ Also we want to have equal lengths of our sentences so we add `<PAD>`.
 <br>
 Now `sentences.txt` and `labels.txt` files are encoded to numerical values as our model will only learn from numbers and not text.
 
-#### Sequence Padding
+### Sequence Padding
 
 This is where it gets fun. When we sample a batch of sentences, not all the sentences usually have the same length. Let’s say we have a batch of sentences `batch_sentences` that is a Python `list of lists`, with its corresponding `batch_tags` which has a tag for each token in `batch_sentences`.
 
 We add `pad sequences` at last in sentences. Here, we will be taking max length sentence as our main sentence and then pad `<pad>` at the end of all the sentences so that all sequences have all lengths. Similarly in the labels also, we add `O` at last of every label so that all lengths become the same.
 
-#### One hot encoding and Using TensorDataset,DataLoader
+### One hot encoding and Using TensorDataset,DataLoader
 
 Our labels are converted to one hot vectors and then batch_sentences and batch_labels are given to TensorDataset and DataLoader to generate batches.
 
 All these codes are given in <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Model_Basics.ipynb">
   Model Basics</a>
   
-#### Model Building and Training
+## Part-3 Model Building and Training
+
+For Basics of Model Building, see <a href="https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling">Basics</a>
+Please refer to its theory for better understanding.<br>
+Now, we will be discussing about its implementation and test set prediction.<br>
+
+### Implementation
+
+Before implementation, see basics functions used in this implementation : <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/Basics_Of_Functions_Used.ipynb">Basic Functions Used</a><br>
+We will be using embeddings in it, as we don't know how much length a sentence can have.
+
+
 
 See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Model training and building</a> This code part is heavily commented.
+
+
