@@ -111,13 +111,11 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
                                             |
                  For every word in sentence, see emission and transition score and add both.
                                             |
-              Add the summation of emission and transition score to the 2-dimensional Matrix.(see <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/formula1.png?raw=true">Formula 1</a>)
+              Add the summation of emission and transition score to the 2-dimensional Matrix.(see Formula 1)
                                             |
-                  Calculate score of other label and conditional probability,(see <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/formula2.png?raw=true">Formula 2</a>)            
+                  Calculate score of other label and conditional probability,(see Formula 2)            
                                                        
-</b></pre>
-<br>
-<br>
+
 
 ### Prediction 
 
