@@ -126,6 +126,6 @@ Calculating Vertibi Losses ---> Generating Final Scores ---> Taking out Best pat
 </b></pre>
 <br>
 <br>
-See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Bidirectional LSTM + CRF </a> This code part is heavily commented.
+See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Bidirectional LSTM + CRF File. </a> This code part is heavily commented.
 
 
