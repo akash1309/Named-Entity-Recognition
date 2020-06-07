@@ -114,19 +114,21 @@ Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Lab
               Add the summation of emission and transition score to the 2-dimensional Matrix.(see <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/formula1.png?raw=true">Formula 1</a>)
                                             |
                   Calculate score of other label and conditional probability,(see <a href="https://github.com/akash1309/Named-Entity-Recognition/blob/master/formula2.png?raw=true">Formula 2</a>)            
-             
-                  
-
-
-
-
-
-
-
-
-                                          
+                                                       
 </b></pre>
 <br>
-See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Model training and building</a> This code part is heavily commented.
+<br>
+
+### Prediction 
+
+Below is the procedure:
+
+<pre><b>
+Sentence ---> Embedding/Padding ---> Passing Through Bidirectional LSTM ---> Label Prediction ---> Calculating Vertibi Losses ---> Generating Final Scores ---> Taking out Best path and Maximum Score
+
+</b></pre>
+<br>
+<br>
+See <a href= "https://github.com/akash1309/Named-Entity-Recognition/blob/master/Bidirectional_Lstm_%2B_CRF.ipynb"> Bidirectional LSTM + CRF </a> This code part is heavily commented.
 
 
